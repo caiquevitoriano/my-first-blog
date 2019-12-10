@@ -52,3 +52,6 @@ def post_edit(request, pk):
 
 def index(request):
     return render(request, 'blog/index.html', {})
+
+def contatos(request):
+    return render(request, 'blog/contatos.html', {})
