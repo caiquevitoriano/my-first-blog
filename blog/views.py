@@ -55,3 +55,6 @@ def index(request):
 
 def contatos(request):
     return render(request, 'blog/contatos.html', {})
+
+def galeria(request):
+    return render(request, 'blog/galeria.html', {})
