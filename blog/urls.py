@@ -9,6 +9,8 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('contatos', views.contatos, name='contatos'),
     path('galeria', views.galeria, name='galeria'),
+    path('list', views.post_list_full, name='post_list_full'),
+
 
 
     

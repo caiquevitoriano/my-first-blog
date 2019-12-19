@@ -40,8 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="{% url 'galeria' %}">Galeria</a>
                     </li>
-
-
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{% url 'post_list_full' %}">Noticias</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="{% url 'contatos' %}">Contatos</a>
                     </li>
@@ -76,10 +77,8 @@
             </div>
         </div>
         <div class="content container h-30">
-            <div class="card-deck">
-                {% block content %}
-                {% endblock %}
-            </div>
+            {% block content %}
+            {% endblock %}
         </div>
     </section>
     <section class="page-section bg-primary" id="about">
