@@ -67,11 +67,12 @@
     <section class="page-section">
 
         <div class="page-header">
-            {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu">novo</a>
-            {% endif %}
+
             <div class="container text-center">
                 <h1 class="mb-4">Noticias</h1>
+                {% if user.is_authenticated %}
+                <h2> <a href="{% url 'post_new' %}" class="top-menu">Nova noticia +</a></h2>
+                {% endif %}
             </div>
         </div>
         <div class="content container h-30">
@@ -85,7 +86,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0"><a href="{% url 'galeria' %}" class="text-white"> Conheça nossas atrações </a></h2>
+                    <h2 class="text-white mt-0"><a href="{% url 'galeria' %}" class="text-white"> Conheça nossas
+                            atrações </a></h2>
                     <hr class="divider light my-4">
                     <p class="text-white-50 mb-4">Cultura, Artesanato, Esportes, Ciencia, Historia, Natureza... Uma
                         experiencia completa!!!</p>
@@ -141,7 +143,7 @@
             </div>
         </div>
     </section>
- 
+
 
     <!-- Call to Action Section -->
     <section class="page-section bg-dark text-white">
@@ -154,8 +156,9 @@
 
                 <div class="col-md-6 col-sm-6">
 
-                    <h2 class="mb-4" > <a href="https://www.google.com/maps?ll=-7.589447,-36.168843&z=10&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14230894312780598941">
-                     Como chegar </a></h2>
+                    <h2 class="mb-4"> <a
+                            href="https://www.google.com/maps?ll=-7.589447,-36.168843&z=10&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14230894312780598941">
+                            Como chegar </a></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor elit pretium
                         semper pellentesque. Nullam mattis enim a accumsan imperdiet. Praesent at mollis purus. Morbi
